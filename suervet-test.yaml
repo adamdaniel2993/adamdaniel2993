@@ -1,0 +1,14 @@
+---
+- hosts: all
+  # vars_prompt:
+
+  #   - name: latitude
+  #     prompt: Insert latitude please
+
+  #   - name: longitude
+  #     prompt: insert longitude please
+
+  tasks:
+    - name: Print a message
+      ansible.builtin.debug:
+        msg: 'Your latitude is {{ latitude }} and your longitude is {{ longitude }}'
